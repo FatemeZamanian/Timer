@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Timer</class>
+ <widget class="QWidget" name="Timer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>499</width>
+    <height>452</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Timer</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(23, 41, 159);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(79, 214, 198);</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>StopWatch</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="lbl_stopwatch">
+           <property name="styleSheet">
+            <string notr="true">font: 36pt &quot;Comic Sans MS&quot;;
+color: rgb(55, 17, 135);</string>
+           </property>
+           <property name="text">
+            <string>00:00:00</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>453</width>
+              <height>165</height>
+             </rect>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="vl"/>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_stopwatch_start">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_stopwatch_save">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_stopwatch_pause">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Pause</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_stopwatch_stop">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Timer</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="lbl_timer">
+           <property name="styleSheet">
+            <string notr="true">font: 36pt &quot;Comic Sans MS&quot;;
+color: rgb(55, 17, 135);</string>
+           </property>
+           <property name="text">
+            <string>00:00:00</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="bottomMargin">
+            <number>30</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Hour:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sp_h">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 10pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Minute:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sp_m">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 10pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Seconds:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sp_s">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 10pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_timer_start">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_timer_pause">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Pause</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_timer_stop">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Alarm</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
