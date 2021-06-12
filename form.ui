@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>499</width>
-    <height>452</height>
+    <height>424</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -57,7 +57,7 @@ color: rgb(55, 17, 135);</string>
               <x>0</x>
               <y>0</y>
               <width>453</width>
-              <height>165</height>
+              <height>137</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_2">
@@ -212,6 +212,9 @@ font: 10pt &quot;Comic Sans MS&quot;;</string>
          </item>
          <item>
           <widget class="QPushButton" name="btn_timer_start">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
            <property name="styleSheet">
             <string notr="true">color: rgb(0, 0, 127);
 font: 12pt &quot;Comic Sans MS&quot;;</string>
@@ -251,6 +254,99 @@ font: 12pt &quot;Comic Sans MS&quot;;</string>
       <attribute name="title">
        <string>Alarm</string>
       </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="lbl_alarm">
+           <property name="styleSheet">
+            <string notr="true">font: 36pt &quot;Comic Sans MS&quot;;
+color: rgb(55, 17, 135);</string>
+           </property>
+           <property name="text">
+            <string>00:00</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="bottomMargin">
+            <number>30</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Hour:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sp_ho">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 10pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Minute:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sp_mi">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 127);
+font: 10pt &quot;Comic Sans MS&quot;;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_alarm_on">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Enable Alarm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_alarm_off">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 127);
+font: 12pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Disable Alarm</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </widget>
     </widget>
    </item>
